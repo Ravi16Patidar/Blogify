@@ -1,0 +1,94 @@
+/* Form container */
+.blog-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f4f6f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form title */
+  .blog-form-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Form labels */
+  .blog-form label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+  }
+  
+  /* Input fields */
+  .blog-form input[type="text"],
+  .blog-form textarea,
+  .blog-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  .blog-form input[type="text"]:focus,
+  .blog-form textarea:focus,
+  .blog-form select:focus {
+    border-color: #0077cc;
+    outline: none;
+  }
+  
+  /* File upload */
+  .blog-form input[type="file"] {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* Button */
+  .blog-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #a268ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  .blog-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Custom category input */
+  .blog-form .custom-category-input {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-file-input{
+    margin-bottom:20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blog-form-container {
+      padding: 20px;
+    }
+  
+    .blog-form-title {
+      font-size: 1.8rem;
+    }
+  }
+  

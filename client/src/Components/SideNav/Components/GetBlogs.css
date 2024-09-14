@@ -1,0 +1,165 @@
+/* General container for the blog list */
+.blog-list-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #f0f4f8;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  
+}
+
+.blog-list-container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog list title */
+.blog-list-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* List styling */
+.blog-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Each blog item container */
+.blog-item {
+  background-color: #fff;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog content container */
+.blog-content {
+  flex: 1;
+  margin-bottom: 20px;
+  line-height:25px;
+  
+}
+
+/* Blog title styling */
+.blog-title {
+  font-size: 1.8rem;
+  color: #a268ff;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.blog-title:hover {
+  color: #005fa3;
+}
+
+/* Blog category */
+.blog-category {
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+/* Blog author */
+.blog-author {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+/* Blog publish date */
+.blog-date {
+  font-size: 0.95rem;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+/* Blog content/description */
+.blog-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Blog image container */
+.blog-image-container {
+  text-align: center;
+margin-bottom:20px;
+}
+
+/* Blog image */
+.blog-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.blog-image:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.blog-actions {
+  margin-top: 10px;
+}
+
+.btn-update,
+.btn-delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-update {
+  color: #007bff;
+}
+
+.btn-update:hover {
+  color: #0056b3;
+}
+
+.btn-delete {
+  color: #dc3545;
+}
+
+.btn-delete:hover {
+  color: #c82333;
+}
+
+.btn-update .faEdit,
+.btn-delete .faTrashAlt {
+  margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-list-container {
+    padding: 20px;
+  }
+
+  .blog-title {
+    font-size: 1.6rem;
+  }
+}
