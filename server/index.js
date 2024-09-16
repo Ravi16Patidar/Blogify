@@ -16,7 +16,12 @@ console.log(__filename,__dirname,'filenameanddirname')
 // Middleware to serve static files
 app.use('/uploads', express.static(join(__dirname, 'uploads')));
 const PORT = process.env.PORT || 4000;
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+origin:["https://blogify-frontend-nine.vercel.app"],
+methods:["POST","GET"],
+credentials:true
+}))
 mongoose
   .connect(`mongodb+srv://ravi4116patidar:ravi600882@cluster0.mjbm1ae.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority&appName=Cluster0`)
   .then(() => console.log("Database connected"))
