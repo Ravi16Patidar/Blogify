@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 4000;
 // app.use(cors());
 app.use(cors({
 origin:["https://blogify-frontend-nine.vercel.app"],
-methods:["POST","GET"],
+methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 credentials:true
 }))
 mongoose
