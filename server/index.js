@@ -23,6 +23,9 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use(express.json());
+app.get('/',(req,res)=>{
+  res.send('Hello')
+})
 app.use(userRoute);
 app.use(blogRoute);
 
